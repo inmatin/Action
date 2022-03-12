@@ -10,14 +10,20 @@ import java.lang.reflect.Field;
  * Assignment: Assignment 01<br>
  * Date: Mar 7, 2022<br>
  * <p>
- */
-
-/**
+ * 
  * Purpose:<br>
  * This assignment focuses on the concept of inheritance, abstraction,
  * arrays.<br>
  * 
- * Class SalesAgent show a Sales Agent with a name and age.<br>
+ * <p>
+ * java reflection is process of examining or modifying the run time behavior of
+ * a class at run time.<br>
+ * <p>
+ * test class OccasionalAction is a subclass of superclass Action.<br>
+ * test class RareAction is a subclass of superclass Action.<br>
+ * test fields of class OccasionalAction by restricting field length to 0.<br>
+ * test fields of class RareAction by restricting field length to 0.<br>
+ * if test passes output true.<br>
  * 
  * <p>
  * Class List: {@link Action}, {@link RegularAction}, {@link OccasionalAction},
@@ -42,9 +48,52 @@ import java.lang.reflect.Field;
 public class ActionDriver2 {
 
 	/**
-	 * Start the execution of the program.<br>
+	 * java reflection is process of examining or modifying the run time behavior of
+	 * a class at run time.<br>
+	 * 
+	 * test class OccasionalAction is a subclass of superclass Action.<br>
+	 * 
+	 * test class RareAction is a subclass of superclass Action.<br>
+	 * 
+	 * test fields of class OccasionalAction by restricting field length to 0.<br>
+	 * 
+	 * test fields of class RareAction by restricting field length to 0.<br>
+	 * 
+	 * if test passes output true.<br>
+	 * 
+	 * <p>
+	 * examining the class testing class OccasionalAction is a subclass of
+	 * superclass Action.<br>
+	 * examining the class testing class RareAction is a subclass of superclass
+	 * Action.<br>
+	 * examining the fields.<br>
+	 * testing field length to establish there are no fields.<br>
 	 * 
 	 * @param args command-line arguments.
+	 * 
+	 *             java reflection is process of examining or modifying the run time
+	 *             behavior of a class at run time.<br>
+	 * 
+	 *             test class OccasionalAction is a subclass of superclass
+	 *             Action.<br>
+	 * 
+	 *             test class RareAction is a subclass of superclass Action.<br>
+	 * 
+	 *             test fields of class OccasionalAction by restricting field length
+	 *             to 0.<br>
+	 * 
+	 *             test fields of class RareAction by restricting field length to
+	 *             0.<br>
+	 * 
+	 *             if test passes output true.<br>
+	 * 
+	 *             <p>
+	 *             examining the class testing class OccasionalAction is a subclass
+	 *             of superclass Action.<br>
+	 *             examining the class testing class RareAction is a subclass of
+	 *             superclass Action.<br>
+	 *             examining the fields.<br>
+	 *             testing field length to establish there are no fields.<br>
 	 * 
 	 */
 	public static void main(String[] args) {
@@ -58,8 +107,8 @@ public class ActionDriver2 {
 		Class<?> action = Action.class;
 
 		/**
-		 * examining the class testing class OccasionalAction is a subclass of Action
-		 * superclass.
+		 * examining the class testing class OccasionalAction is a subclass of
+		 * superclass Action.<br>
 		 */
 
 		if (occasional.getSuperclass() == action) {
@@ -69,8 +118,9 @@ public class ActionDriver2 {
 		System.out.println("Expected: true");
 
 		/**
-		 * examining the class testing class RareAction is a subclass of Action
-		 * superclass.
+		 * examining the class testing class RareAction is a subclass of superclass
+		 * Action.<br>
+		 * 
 		 */
 		System.out.print("\nRareAction is just a subclass of Action:");
 
@@ -80,7 +130,8 @@ public class ActionDriver2 {
 		System.out.println("Expected: true");
 
 		/**
-		 * examining the fields. testing field length to establish there are no fields.
+		 * examining the fields.<br>
+		 * testing field length to establish there are no fields.<br>
 		 */
 		System.out.print("\nOccasionalAction activities have no extra fields:");
 
@@ -92,7 +143,8 @@ public class ActionDriver2 {
 		System.out.println("Expected: true");
 
 		/**
-		 * examining the fields. testing field length to establish there are no fields.
+		 * examining the fields.<br>
+		 * testing field length to establish there are no fields.<br>
 		 */
 		System.out.print("\nRareAction activities have no extra fields:");
 

@@ -14,9 +14,7 @@ package assignment1.Action.sec302;
  * Assignment: Assignment 01<br>
  * Date: Mar 7, 2022<br>
  * <p>
- */
-
-/**
+ * 
  * Purpose:<br>
  * This assignment focuses on the concept of inheritance, abstraction,
  * arrays.<br>
@@ -48,8 +46,9 @@ package assignment1.Action.sec302;
 public class RareAction extends Action {
 
 	/**
-	 * passes the description of the action.<br>
-	 * using constructor RareAction to set object description.<br>
+	 * constructor RareAction passes the description of the action.<br>
+	 * constructor RareAction get the object description from superclass Action.<br>
+	 * constructor RareAction set object description in superclass Action.<br>
 	 * 
 	 * @param description task to be completed.
 	 */
@@ -59,7 +58,9 @@ public class RareAction extends Action {
 	}
 
 	/**
-	 * override the occursOn method.
+	 * override the occursOn method from superclass Action.<br>
+	 * get object year, month and day.<br>
+	 * validates conditions required to output object description.<br>
 	 */
 	@Override
 	public boolean occursOn(int year, int month, int day) {
@@ -77,8 +78,9 @@ public class RareAction extends Action {
 	}
 
 	/**
-	 * override the toString method.<br>
+	 * overrides the toString method.<br>
 	 * gets object description from the superclass Action.<br>
+	 * outputs object description.<br>
 	 */
 	@Override
 	public String toString() {

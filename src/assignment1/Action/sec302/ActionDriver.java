@@ -3,11 +3,6 @@ package assignment1.Action.sec302;
 import java.lang.reflect.Field;
 
 /**
- * java reflection is process of examining or modifying the run time behavior of
- * a class at run time.
- */
-
-/**
  * File Name: ActionDriver.java<br>
  * Author: Ishtiaque Matin, ID# 041042199<br>
  * Professor: Sandra Iroakazi<br>
@@ -15,14 +10,21 @@ import java.lang.reflect.Field;
  * Assignment: Assignment 01<br>
  * Date: Mar 7, 2022<br>
  * <p>
- */
-
-/**
+ * 
+ * 
  * Purpose:<br>
  * This assignment focuses on the concept of inheritance, abstraction,
  * arrays.<br>
  * 
- * Class SalesAgent show a Sales Agent with a name and age.<br>
+ * <p>
+ * java reflection is process of examining or modifying the run time behavior of
+ * a class at run time.<br>
+ * 
+ * <p>
+ * test class RegularAction is a subclass of superclass Action.<br>
+ * test fields of class RegularAction by restricting field length to 0.<br>
+ * test object of class RegularAction by executing toString method.<br>
+ * if test passes output true.<br>
  * 
  * <p>
  * Class List: {@link Action}, {@link RegularAction}, {@link OccasionalAction},
@@ -43,13 +45,51 @@ import java.lang.reflect.Field;
  * @see AllActionTest
  * @see Class
  * @see Field
+ *
  */
 public class ActionDriver {
 
 	/**
-	 * Start the execution of the program.<br>
+	 * 
+	 * test class RegularAction is a subclass of superclass Action.<br>
+	 * 
+	 * test fields of class RegularAction by restricting field length to 0.<br>
+	 * 
+	 * test object of class RegularAction by executing toString method.<br>
+	 * 
+	 * if test passes output true.<br>
+	 * 
+	 * <p>
+	 * 
+	 * examining the superclass. testing class RegularAction is a subclass of
+	 * superclass Action.<br>
+	 * examining the superclass.<br>
+	 * testing class RegularAction is a subclass of superclass Action.<br>
+	 * examining the objects.<br>
+	 * testing object in class RegularAction by executing by toString method.<br>
 	 * 
 	 * @param args command-line arguments.
+	 * 
+	 *             test class RegularAction is a subclass of superclass Action.<br>
+	 * 
+	 *             test fields of class RegularAction by restricting field length to
+	 *             0.<br>
+	 * 
+	 *             test object of class RegularAction by executing toString
+	 *             method.<br>
+	 * 
+	 *             if test passes output true.<br>
+	 * 
+	 *             <p>
+	 * 
+	 *             examining the superclass. testing class RegularAction is a
+	 *             subclass of superclass Action.<br>
+	 *             examining the superclass.<br>
+	 *             testing class RegularAction is a subclass of superclass
+	 *             Action.<br>
+	 *             examining the objects.<br>
+	 *             testing object in class RegularAction by executing by toString
+	 *             method.<br>
 	 */
 	public static void main(String[] args) {
 
@@ -59,8 +99,8 @@ public class ActionDriver {
 		Class<?> action = Action.class;
 
 		/**
-		 * examining the superclass. testing class RegularAction is a subclass of Action
-		 * superclass.
+		 * examining the superclass.<br>
+		 * testing class RegularAction is a subclass of superclass Action.<br>
 		 */
 		System.out.print("\nRegularAction is just a subclass of Action: ");
 
@@ -71,7 +111,8 @@ public class ActionDriver {
 		System.out.println("Expected: true");
 
 		/**
-		 * examining the fields. testing field length to establish there are no fields.
+		 * examining the fields. testing field length to establish there are no
+		 * fields.<br>
 		 */
 
 		System.out.print("\nRegularAction activities have no extra fields: ");
@@ -83,8 +124,8 @@ public class ActionDriver {
 
 		System.out.println("Expected: true");
 		/**
-		 * examining the objects. testing object in class RegularAction by executing by
-		 * toString method.
+		 * examining the objects.<br>
+		 * testing object in class RegularAction by executing by toString method.<br>
 		 */
 		RegularAction regularObj = new RegularAction(" Wash your hands");
 

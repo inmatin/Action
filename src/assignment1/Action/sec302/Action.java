@@ -14,9 +14,7 @@ package assignment1.Action.sec302;
  * Assignment: Assignment 01<br>
  * Date: Mar 7, 2022<br>
  * <p>
- */
-
-/**
+ * 
  * Purpose:<br>
  * This assignment focuses on the concept of inheritance, abstraction,
  * arrays.<br>
@@ -45,7 +43,8 @@ public abstract class Action {
 	private String description;
 
 	/**
-	 * Constructs an action without a description.
+	 * constructs Action set object description to blank.<br>
+	 * used by subclasses to set object description.<br>
 	 */
 	public Action() {
 		description = "";
@@ -55,7 +54,7 @@ public abstract class Action {
 	 * Sets the description of this action.<br>
 	 * using method setDescription to set description object.<br>
 	 * 
-	 * @param description the text description of the action
+	 * @param description the text description of the action.
 	 */
 	public void setDescription(String description) {
 		this.description = description;
@@ -68,6 +67,8 @@ public abstract class Action {
 	/**
 	 * Determines if this action occurs on the specified date.<br>
 	 * using abstract method occursOn with defined year, month, day.<br>
+	 * it is extended to the subclass RegularAction, OccasionalAction and
+	 * RareAction.<br>
 	 * 
 	 * @param year  the year
 	 * @param month the month

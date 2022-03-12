@@ -21,9 +21,7 @@ import java.util.Scanner;
  * Assignment: Assignment 01<br>
  * Date: Mar 7, 2022<br>
  * <p>
- */
-
-/**
+ * 
  * Purpose:<br>
  * This assignment focuses on the concept of inheritance, abstraction,
  * arrays.<br>
@@ -32,7 +30,7 @@ import java.util.Scanner;
  * An array of action object have been created to output different action
  * activities.<br>
  * User inputs a date of their choice and retrieve an output of all activities
- * that would occur on that date.
+ * that would occur on that date.<br>
  * 
  * <p>
  * Class List: {@link Action}, {@link RegularAction}, {@link OccasionalAction},
@@ -56,9 +54,49 @@ import java.util.Scanner;
 public class AllActionTest {
 
 	/**
-	 * Start the execution of the program.<br>
+	 * Class AllActionTest demonstrates the Action class and subclasses.<br>
+	 * An array of action object have been created to output different action
+	 * activities.<br>
+	 * 
+	 * User inputs a date of their choice and retrieve an output of all activities
+	 * that would occur on that date.<br>
+	 * <p>
+	 * 
+	 * an Array of objects with different task which need to be completed on
+	 * particular dates.<br>
+	 * 
+	 * RegularAction any time after 2020.<br>
+	 * 
+	 * OccassionalAction any time greater 15th day of the month.<br>
+	 * 
+	 * RareAction on month 06 and 12 and on the 20th day of the month.<br>
+	 * 
+	 * setting the class Action object description using an array.<br>
+	 * 
+	 * <p>
 	 * 
 	 * @param args command-line arguments.
+	 * 
+	 *             Class AllActionTest demonstrates the Action class and
+	 *             subclasses.<br>
+	 *             An array of action object have been created to output different
+	 *             action activities.<br>
+	 * 
+	 *             User inputs a date of their choice and retrieve an output of all
+	 *             activities that would occur on that date.<br>
+	 *             <p>
+	 * 
+	 *             an Array of objects with different task which need to be
+	 *             completed on particular dates.<br>
+	 * 
+	 *             RegularAction any time after 2020.<br>
+	 * 
+	 *             OccassionalAction any time greater 15th day of the month.<br>
+	 * 
+	 *             RareAction on month 06 and 12 and on the 20th day of the
+	 *             month.<br>
+	 * 
+	 *             setting the class Action object description using an array.<br>
 	 */
 	public static void main(String[] args) {
 
@@ -68,15 +106,15 @@ public class AllActionTest {
 		System.out.print("\nPART 3 \n\r");
 		/**
 		 * an Array of objects with different task which need to be completed on
-		 * particular dates.
+		 * particular dates.<br>
 		 * 
-		 * RegularAction any time after 2020.
+		 * RegularAction any time after 2020.<br>
 		 * 
-		 * OccassionalAction any time greater 15th day of the month.
+		 * OccassionalAction any time greater 15th day of the month.<br>
 		 * 
-		 * RareAction on month 06 & 12 and on the 20th day of the month.
+		 * RareAction on month 06 & 12 and on the 20th day of the month.<br>
 		 * 
-		 * setting the class Action object description using an array.
+		 * setting the class Action object description using an array.<br>
 		 */
 		Action object[] = { new RegularAction("Wash your Hands"), new RegularAction("Wear a mask"),
 				new RegularAction("Sit two metters apart"), new OccasionalAction("Take a PCR Test"),
@@ -88,8 +126,7 @@ public class AllActionTest {
 		while (go.equals("yes")) {
 
 			/**
-			 * fields to get input for date from user.
-			 * need to add more commenting.
+			 * fields to get input for date from user. need to add more commenting.
 			 */
 
 			System.out.print("\nEnter a date (like 2010 01 30): ");
